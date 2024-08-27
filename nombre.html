@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Nombre</title>
+</head>
+<body>
+    <h2>Ingrese su nombre:</h2>
+    <input type="text" id="nombreUsuario" placeholder="Nombre">
+    <button onclick="mostrarNombre()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarNombre() {
+            var nombre = document.getElementById("nombreUsuario").value;
+            document.getElementById("resultado").innerText = "Hola, " + nombre + "!";
+        }
+    </script>
+</body>
+</html>
